@@ -1,6 +1,10 @@
 class Message < ActiveRecord::Base
   has_and_belongs_to_many :contacts
 
+  validates :body, presence: true
+  validates :to, presence: true
+  validates :from, presence: true
+
   def send_message
 
     twilio_account_sid = ENV['TWILIO_TEST'] ? ENV['TWILIO_TEST_ACCOUNT_SID'] : ENV['TWILIO_ACCOUNT_SID']

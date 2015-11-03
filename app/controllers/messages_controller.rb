@@ -1,5 +1,6 @@
 class MessagesController < ApplicationController
   def index
+    @inbound_messages = Message.where(to: ENV['TWILIO_NUMBER'])
   end
 
   def new

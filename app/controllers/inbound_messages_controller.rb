@@ -3,6 +3,7 @@ class InboundMessagesController < ApplicationController
 
   def create
     inbound_message = InboundMessage.new(:message => params)
+    inbound_message.save_message()
     @response = inbound_message.send_response()
   end
 end

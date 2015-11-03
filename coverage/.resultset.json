@@ -628,12 +628,16 @@
         null,
         1,
         1,
-        2,
+        5,
         null,
         null,
         1,
-        2,
+        5,
         null,
+        null,
+        2,
+        2,
+        2,
         null,
         1,
         1,
@@ -648,6 +652,10 @@
         null
       ],
       "/Users/Guest/epicodus-text_a_friend/app/models/message.rb": [
+        1,
+        1,
+        null,
+        1,
         1,
         1,
         null,
@@ -695,6 +703,6 @@
         null
       ]
     },
-    "timestamp": 1446580787
+    "timestamp": 1446583163
   }
 }
