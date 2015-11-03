@@ -36,13 +36,13 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 03 Nov 2015 17:55:23 GMT
+      - Tue, 03 Nov 2015 19:59:47 GMT
       Strict-Transport-Security:
       - max-age=15768000
       Twilio-Request-Duration:
-      - '0.045'
+      - '0.057'
       Twilio-Request-Id:
-      - RQ9433b2c5199d47f2992fd63dfa4054d2
+      - RQ287d458aa9884f54aeb0112824e461fb
       X-Powered-By:
       - AT-5000
       X-Shenanigans:
@@ -53,14 +53,14 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: '{"sid": "SMacd3ad0a7e574106ac486b9bc8a08391", "date_created": "Tue,
-        03 Nov 2015 17:55:23 +0000", "date_updated": "Tue, 03 Nov 2015 17:55:23 +0000",
+      string: '{"sid": "SM1942d12830774807a693ca9fb4d8da86", "date_created": "Tue,
+        03 Nov 2015 19:59:47 +0000", "date_updated": "Tue, 03 Nov 2015 19:59:47 +0000",
         "date_sent": null, "account_sid": "AC49399a5ab78fa90ffad8d20ec2b46478", "to":
         "+15005550006", "from": "+15005550006", "messaging_service_sid": null, "body":
         "hi", "status": "queued", "num_segments": "1", "num_media": "0", "direction":
         "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit":
-        "USD", "uri": "/2010-04-01/Accounts/AC49399a5ab78fa90ffad8d20ec2b46478/Messages/SMacd3ad0a7e574106ac486b9bc8a08391.json",
-        "subresource_uris": {"media": "/2010-04-01/Accounts/AC49399a5ab78fa90ffad8d20ec2b46478/Messages/SMacd3ad0a7e574106ac486b9bc8a08391/Media.json"}}'
+        "USD", "uri": "/2010-04-01/Accounts/AC49399a5ab78fa90ffad8d20ec2b46478/Messages/SM1942d12830774807a693ca9fb4d8da86.json",
+        "subresource_uris": {"media": "/2010-04-01/Accounts/AC49399a5ab78fa90ffad8d20ec2b46478/Messages/SM1942d12830774807a693ca9fb4d8da86/Media.json"}}'
     http_version: 
-  recorded_at: Tue, 03 Nov 2015 17:55:23 GMT
+  recorded_at: Tue, 03 Nov 2015 19:59:47 GMT
 recorded_with: VCR 2.9.3

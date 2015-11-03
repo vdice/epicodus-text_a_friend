@@ -9,14 +9,14 @@ describe Message do
     ENV['TWILIO_TEST'] = ''
   end
 
-  it "doesn't save the message if twilio gives an error", :vcr => true do
-    message = Message.new(:body => 'hi', :to => '1111111', :from => '+15005550006')
-    expect(message.save).to be false
+  it "doesn't send the message if twilio gives an error", :vcr => true do
+    message = Message.create(:body => 'hi', :to => '1111111', :from => '+15005550006')
+    expect(message.send_message).to be false
   end
 
   it 'sends to an existing contact', :vcr => true do
     contact = Contact.create(name: 'Anony', number: '+15005550006')
-    message = Message.new(:body => 'hi', :to => contact.id, :from => '+15005550006')
-    expect(message.save).to be true
+    message = Message.create(:body => 'hi', :to => contact.id, :from => '+15005550006')
+    expect(message.send_message).to be true
   end
 end

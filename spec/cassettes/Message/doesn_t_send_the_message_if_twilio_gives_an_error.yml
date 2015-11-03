@@ -36,11 +36,11 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Tue, 03 Nov 2015 17:55:22 GMT
+      - Tue, 03 Nov 2015 19:59:47 GMT
       Twilio-Request-Duration:
-      - '0.139'
+      - '0.128'
       Twilio-Request-Id:
-      - RQ66fe86085aed4281bf408656e93ad71e
+      - RQe2d6a9253c254f74b13467e176fcfc94
       X-Powered-By:
       - AT-5000
       X-Shenanigans:
@@ -55,5 +55,5 @@ http_interactions:
         phone number.", "more_info": "https://www.twilio.com/docs/errors/21211", "status":
         400}'
     http_version: 
-  recorded_at: Tue, 03 Nov 2015 17:55:22 GMT
+  recorded_at: Tue, 03 Nov 2015 19:59:47 GMT
 recorded_with: VCR 2.9.3

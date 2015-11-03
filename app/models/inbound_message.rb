@@ -1,8 +1,17 @@
 class InboundMessage
+  attr_reader(:message)
 
-  def self.send_response params
+  define_method :initialize do |attributes|
+    @message = attributes.fetch :message
+  end
+
+  def save_message
+    Message.create(:body => @message[:Body], :to => @message[:To], :from => @message[:From])
+  end
+
+  def send_response
     payload = { :Body => 'Hi there! This is an automatic reply. Only robots will see your text.',
-                :To => params[:From],
+                :To => @message[:From],
                 :From => ENV['TWILIO_NUMBER']  }
 
     RestClient::Request.new(
