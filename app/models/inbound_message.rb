@@ -1,18 +1,18 @@
 class InboundMessage
-  sender = params[:From]
-  begin
-    response = RestClient::Request.new(
+
+  def self.send_response params
+    payload = { :Body => 'Hi there! This is an automatic reply. Only robots will see your text.',
+                :To => params[:From],
+                :From => ENV['TWILIO_NUMBER']  }
+
+    RestClient::Request.new(
       :method => :post,
       :url => "https://api.twilio.com/2010-04-01/Accounts/#{ENV['TWILIO_ACCOUNT_SID']}/Messages.json",
       :user => ENV['TWILIO_ACCOUNT_SID'],
       :password => ENV['TWILIO_AUTH_TOKEN'],
-      :payload => { :Body => 'hi there!  I\'m a robot',
-                    :To => sender,
-                    :From => from }
+      :payload => payload
     ).execute
-  rescue  RestClient::BadRequest => error
-    message = JSON.parse(error.response)['message']
-    errors.add(:base, message)
-    false
+
+    payload
   end
 end

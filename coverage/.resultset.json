@@ -1,84 +1,102 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/texting/spec/models/contact_spec.rb": [
-        1,
-        null,
-        1,
-        2,
-        2,
-        2,
-        null
-      ],
-      "/Users/Guest/texting/spec/rails_helper.rb": [
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+      "/Users/Guest/epicodus-text_a_friend/spec/features/send_response_pages_spec.rb": [
         1,
         null,
         1,
         null,
         1,
-        null,
-        null,
-        null,
-        null,
         1,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        1,
         1,
         null,
         null,
         1,
         1,
         1,
+        null,
+        null,
+        null,
+        1,
+        null,
         1,
         null,
         null
       ],
-      "/Users/Guest/texting/config/environment.rb": [
+      "/Users/Guest/epicodus-text_a_friend/spec/rails_helper.rb": [
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/epicodus-text_a_friend/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/Guest/texting/config/application.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/application.rb": [
         1,
         null,
         1,
@@ -115,12 +133,12 @@
         null,
         null
       ],
-      "/Users/Guest/texting/config/boot.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/Guest/texting/config/environments/test.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/environments/test.rb": [
         1,
         null,
         null,
@@ -164,7 +182,7 @@
         null,
         null
       ],
-      "/Users/Guest/texting/config/initializers/assets.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -177,7 +195,7 @@
         null,
         null
       ],
-      "/Users/Guest/texting/config/initializers/backtrace_silencers.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -186,12 +204,12 @@
         null,
         null
       ],
-      "/Users/Guest/texting/config/initializers/cookies_serializer.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/Guest/texting/config/initializers/devise.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -455,13 +473,13 @@
         null,
         null
       ],
-      "/Users/Guest/texting/config/initializers/filter_parameter_logging.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/Guest/texting/config/initializers/inflections.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -479,18 +497,18 @@
         null,
         null
       ],
-      "/Users/Guest/texting/config/initializers/mime_types.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/Guest/texting/config/initializers/session_store.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/Guest/texting/config/initializers/wrap_parameters.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -506,7 +524,7 @@
         null,
         null
       ],
-      "/Users/Guest/texting/config/routes.rb": [
+      "/Users/Guest/epicodus-text_a_friend/config/routes.rb": [
         1,
         null,
         1,
@@ -515,84 +533,144 @@
         1,
         1,
         null,
-        null,
-        null
-      ],
-      "/Users/Guest/texting/app/models/user.rb": [
         1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/Users/Guest/texting/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/Guest/texting/app/models/contact.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/Guest/texting/spec/models/message_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/Guest/texting/app/models/message.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        2,
-        2,
-        1,
-        null,
-        1,
-        null,
-        null,
-        2,
-        2,
-        2,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        2,
-        2,
-        2,
-        null,
-        null,
         null,
         null
       ],
-      "/Users/Guest/texting/spec/models/user_spec.rb": [
+      "/Users/Guest/epicodus-text_a_friend/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/Users/Guest/epicodus-text_a_friend/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/epicodus-text_a_friend/spec/models/contact_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/Guest/epicodus-text_a_friend/app/models/contact.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/epicodus-text_a_friend/spec/models/inbound_message_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/epicodus-text_a_friend/app/models/inbound_message.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/epicodus-text_a_friend/spec/models/message_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/epicodus-text_a_friend/app/models/message.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        2,
+        2,
+        null,
+        null,
+        2,
+        2,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        2,
+        null,
+        null
+      ],
+      "/Users/Guest/epicodus-text_a_friend/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -600,6 +678,6 @@
         null
       ]
     },
-    "timestamp": 1446508807
+    "timestamp": 1446578104
   }
 }

@@ -6,6 +6,10 @@ private
 
   def send_message
 
+    twilio_account_sid = ENV['TWILIO_TEST'] ? ENV['TWILIO_TEST_ACCOUNT_SID'] : ENV['TWILIO_ACCOUNT_SID']
+    twilio_auth_token = ENV['TWILIO_TEST'] ? ENV['TWILIO_TEST_AUTH_TOKEN'] : ENV['TWILIO_AUTH_TOKEN']
+
+    # For mass texting:
     if !self.contacts.any?
       if self.to && self.to.length > 5 # probably a number
         self.contacts = [Contact.create(:name => 'Anonymous', :number => to)]
@@ -13,22 +17,25 @@ private
         self.contacts = [Contact.find(to)]
       end
     end
+
+    success = true
     self.contacts.each do |contact|
       begin
         response = RestClient::Request.new(
           :method => :post,
-          :url => "https://api.twilio.com/2010-04-01/Accounts/#{ENV['TWILIO_ACCOUNT_SID']}/Messages.json",
-          :user => ENV['TWILIO_ACCOUNT_SID'],
-          :password => ENV['TWILIO_AUTH_TOKEN'],
+          :url => "https://api.twilio.com/2010-04-01/Accounts/#{twilio_account_sid}/Messages.json",
+          :user => twilio_account_sid,
+          :password => twilio_auth_token,
           :payload => { :Body => body,
                         :To => contact.number,
-                        :From => from }
+                        :From => from ? from : ENV['TWILIO_NUMBER'] }
         ).execute
-      rescue  RestClient::BadRequest => error
+      rescue RestClient::BadRequest => error
         message = JSON.parse(error.response)['message']
         errors.add(:base, message)
-        false
+        success = false
       end
     end
+    success
   end
 end

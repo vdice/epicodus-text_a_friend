@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://<twilio account sid>:<twilio auth token>@api.twilio.com/2010-04-01/Accounts/<twilio
+      account sid>/Messages.json
+    body:
+      encoding: US-ASCII
+      string: Body=Hi%20there!%20This%20is%20an%20automatic%20reply.%20Only%20robots%20will%20see%20your%20text.&To=7206132850&From=7206132850
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '128'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: CREATED
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match,
+        If-Unmodified-Since
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - ETag
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 03 Nov 2015 19:13:53 GMT
+      Strict-Transport-Security:
+      - max-age=15768000
+      Twilio-Request-Duration:
+      - '0.168'
+      Twilio-Request-Id:
+      - RQ77d6f05b9907483880e69571d2a83e22
+      X-Powered-By:
+      - AT-5000
+      X-Shenanigans:
+      - none
+      Content-Length:
+      - '833'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"sid": "SMcfdbf734d9094fbb9e9367dd80d3e502", "date_created": "Tue,
+        03 Nov 2015 19:13:53 +0000", "date_updated": "Tue, 03 Nov 2015 19:13:53 +0000",
+        "date_sent": null, "account_sid": "<twilio account sid>", "to": "+17206132850",
+        "from": "+17206132850", "messaging_service_sid": null, "body": "Hi there!
+        This is an automatic reply. Only robots will see your text.", "status": "queued",
+        "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version":
+        "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message":
+        null, "uri": "/2010-04-01/Accounts/<twilio account sid>/Messages/SMcfdbf734d9094fbb9e9367dd80d3e502.json",
+        "subresource_uris": {"media": "/2010-04-01/Accounts/<twilio account sid>/Messages/SMcfdbf734d9094fbb9e9367dd80d3e502/Media.json"}}'
+    http_version: 
+  recorded_at: Tue, 03 Nov 2015 19:13:53 GMT
+recorded_with: VCR 2.9.3
