@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @user = User.find(contact_params[:user_id])
+    @user = User.find(params[:user_id])
     @contact = @user.contacts.new(contact_params)
     if @contact.save
       flash[:notice] = 'Contact successfully saved!'
